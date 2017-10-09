@@ -1,4 +1,4 @@
-####
+###
 # Each team's file must define four tokens:
 #     team_name: a string
 #     strategy_name: a string
@@ -48,7 +48,7 @@ def move(my_history, their_history, my_score, their_score):
                 return "b"
                 #if they dont squeal, I squeal. I get 100 points :)
     if len(my_history) >= 12:
-        if partner == "True":
+        if partner == "True" or their_history[0:10] == my_history[0:10]:
             return "c"
         else:
             #just some possible strategys and counters
